@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title>All films</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>Film</th>
+          <th>Stars</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.star }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+</body>
+</html>
